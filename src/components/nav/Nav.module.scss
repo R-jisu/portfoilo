@@ -1,18 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Heebo", sans-serif;
-  list-style: none;
-  background-color: black;
-}
-
 .container {
   padding: 5%;
+  z-index: 10;
   color: white;
-  position: relative;
-  height: 2000vh;
-
   .title {
     position: fixed;
     top: 70px;

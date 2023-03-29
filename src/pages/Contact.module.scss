@@ -1,0 +1,40 @@
+.container {
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  h2 {
+    margin: 20px;
+    font: {
+      size: 4rem;
+    }
+    border-bottom: 5px solid white;
+    animation: pulse 500ms ease-in-out;
+    animation-iteration-count: 2;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      color: rgba($color: #ffffff, $alpha: 0.6);
+    }
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}

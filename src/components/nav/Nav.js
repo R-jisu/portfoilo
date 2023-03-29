@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "./Nav.module.scss";
 import { Link } from "react-router-dom";
-function Nav() {
+function Nav({ pathname }) {
+  console.log(pathname);
   return (
     <>
       <div className={styles.container}>
