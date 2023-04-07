@@ -1,0 +1,38 @@
+.flexContainer {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .relative {
+    position: relative;
+
+    .text {
+      color: white;
+      position: absolute;
+      font-size: 2.5rem;
+      left: 50%;
+      top: 45%;
+      transform: translate(-50%, -50%);
+    }
+
+    .lang {
+      &HTML {
+        @extend .text;
+        color: #e54e21;
+      }
+      &CSS {
+        @extend .text;
+        color: #379ad6;
+      }
+      &JS {
+        @extend .text;
+        color: #efd81d;
+      }
+      &React {
+        @extend .text;
+        color: #2cc1e8;
+      }
+    }
+  }
+}
